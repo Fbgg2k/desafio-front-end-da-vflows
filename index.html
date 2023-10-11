@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO FORNECEDOR/PRODUTO</title>
+
+    <!-- Link para o arquivo CSS local -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Inclua os arquivos de CSS do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fluig.totvs.com/style-guide/css/fluig-style-guide.min.css">
+</head>
+
+<body>
+    <div class="container">
+                                    <!-- Formulário de Dados do fornecedor-->
+
+        <h1>CADASTRO FORNECEDOR/PRODUTO</h1>
+        <p class="dados-paragrafo">Dados do Fornecedor</p>
+        <form class="custom-border p-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="razaosocial">Razão Social:</label>
+                        <input type="text" class="form-control" id="razaosocial" placeholder="Digite a razão social">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="email">Cnpj:</label>
+                        <input type="email" class="form-control" id="cnpj" placeholder="Digite o cnpj">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="razaosocial">Nome fantasia:</label>
+                        <input type="text" class="form-control" id="nomefantasia" placeholder="Digite a razão social">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="email">Inscrição Estadual:</label>
+                        <input type="email" class="form-control" id="inscricaoestadual"
+                            placeholder="Digite a inscrição estadual">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="inscricaomunicipal">Inscrição Municipal:</label>
+                        <input type="text" class="form-control" id="inscricaomunicipal"
+                            placeholder="Digite a Inscrição Municipal">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="razaosocial">Endereço:</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="email">Número:</label>
+                        <input type="email" class="form-control" id="numero" placeholder="Digite o número">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nome">Complemento:</label>
+                <input type="text" class="form-control" id="complemento" placeholder="Digite o complemento">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="municipio">Município:</label>
+                        <input type="text" class="form-control" id="municipio" placeholder="Digite o município">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <input type="text" class="form-control" id="estado" placeholder="Digite o estado">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-sm-7">
+                    <div class="form-group">
+                        <label for="bairro">Nome da pessoa de contato:</label>
+                        <input type="text" class="form-control" id="pessoacontato" placeholder="Digite o nome">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="municipio">Telefone:</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="Digite o telefone">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="estado">Email:</label>
+                        <input type="text" class="form-control" id="email" placeholder="Digite o email">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+                            <!-- Formulário de Produtos -->
+
+    <div class="container">
+        <p class="produto-paragrafo">Produtos</p>
+        <div class="">
+            <form class="custom-border p-3">
+
+                <div id="produtos" class="margem-esquerda">
+
+                    <!-- Campos do primeiro produto -->
+                    <div class="produto borda-produto">
+
+                        <!-- Adicione a imagem à direita do conteúdo -->
+                        <img src="assets/box.png" alt="Imagem do Produto" class="float-left">
+
+                        <div class="conteudo-produto">
+                            <div class="form-group">
+                                <label for="nomeProduto">Nome do Produto:</label>
+                                <input type="text" class="form-control" id="nomeProduto" name="nomeProduto[]">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="undMedida">UND. Medida:</label>
+                                    <select class="form-control" id="undMedida" name="undMedida[]">
+                                        <option value="Unidade">Unidade</option>
+                                        <option value="Quilograma">Quilograma</option>
+                                        <option value="Litro">Litro</option>
+                                        <option value="Metro">Metro</option>
+                                        <option value="Caixa">Caixa</option>
+                                        <!-- Adicione mais opções conforme necessário -->
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="qtdEstoque">QTD. em Estoque:</label>
+                                    <input type="number" class="form-control" id="qtdEstoque" name="qtdEstoque[]"
+                                        oninput="calcularValorTotal(this)">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="valorUnitario">Valor Unitário:</label>
+                                    <input type="text" class="form-control" id="valorUnitario" name="valorUnitario[]"
+                                        oninput="calcularValorTotal(this)">
+
+                                </div>
+                                <div class="form-group col">
+                                    <label for="valorTotal">Valor Total:</label>
+                                    <input type="text" class="form-control" id="valorTotal" name="valorTotal[]"
+                                        readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-light btn-excluir-produto btn-xs" title="O botão do 1° produto irá atualizar a página">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Botão "Adicionar Produto" -->
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="button" class="btn btn-success btn-adicionar-produto rounded-pill">Adicionar Produto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+                            <!-- Formulário de Anexos -->
+
+    <div class="container">
+        <p class="anexo-paragrafo">Anexos</p>
+        <div class="">
+            <form class="custom-border p-3">
+                <div id="anexos" class="anexos">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome do Documento</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="anexosTbody">
+                            <!-- Exemplo de uma linha na tabela -->
+                            
+
+                            <!-- Adicione mais linhas conforme necessário -->
+                        </tbody>
+
+                    </table>
+                </div>
+                <!-- Botão para incluir anexos -->
+                <div class="text-center mt-3">
+                    <label class="btn btn-success rounded-pill">
+                        Incluir Anexo
+                        <input type="file" id="fileInput" style="display: none;" accept=".pdf, .doc, .docx, .txt"
+                            onchange="arquivoSelecionado()">
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Modal de Loading -->
+        <div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <p>Enviando dados...</p>
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal para exibir JSON -->
+        <div class="modal fade" id="jsonModal" tabindex="-1" role="dialog" aria-labelledby="jsonModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="jsonModalLabel">Dados em JSON</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        <!-- Os dados formatados em JSON serão exibidos aqui -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão "Salvar Fornecedor" -->
+
+        <div class="text-center mt-3 mb-3">
+            <button type="button" class="btn btn-success rounded-pill" onclick="salvarFornecedor()">Salvar Fornecedor</button>
+        </div>
+    </div>
+
+    <!-- Arquivos de JavaScript do Bootstrap (jQuery e Popper.js) -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript/script.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

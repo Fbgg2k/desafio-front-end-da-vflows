@@ -1,0 +1,223 @@
+        
+        /* Navbar de Títulos */
+h1 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 80px;
+}
+
+.dados-paragrafo {
+    background-color: gray;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    width: 230px;
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: 1px;
+    margin-top: 20px;
+}
+
+.produto-paragrafo {
+    background-color: gray;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+
+.anexo-paragrafo {
+    background-color: gray;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+
+/* Estilo para o formulário com borda personalizada */
+.custom-border {
+    border: 3px solid #000; /* Espessura e cor da borda personalizada */
+    border-radius: 15px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno do formulário */
+}
+
+.form-container {
+    margin: 20px;
+    padding: 10px;
+    /*border: 5px solid #000;*/
+    border-radius: 5px;
+}
+.bord-dados {
+    border: 3px solid #000; /* Altere a cor e sa espessura da borda conforme necessário */
+    border-radius: 15px;
+
+}
+
+/* Estilo para a borda externa do formulário */
+form.border {
+    border: 10px solid #000; /* Altere a cor e a espessura da borda do formulário conforme necessário */
+    border-radius: 15px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno do formulário */
+}
+
+/* Estilo para as bordas das entradas do formulário */
+.form-group input.form-control {
+    border: 3px solid #000; /* Altere a cor e a espessura da borda das entradas do formulário conforme necessário */
+    border-radius: 3px; /* Borda arredondada */
+}
+
+/* Estilo para a borda externa do contêiner */
+.container.border {
+    border: 3px solid #000; /* Altere a cor e a espessura da borda do contêiner conforme necessário */
+    border-radius: 15px; /* Borda arredondada */
+    margin-bottom: 20px; /* Espaçamento inferior para separar o contêiner do formulário */
+}
+
+/* Estilo para o texto dentro do contêiner */
+.navbar-text {
+    font-weight: bold; /* Deixa o texto do contêiner em negrito, opcional */
+}
+
+
+/* Estilo para as bordas das entradas do formulário */
+.form-group input.form-control {
+    border: 3px solid #000; /* Altere a cor e a espessura da borda conforme necessário */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Estilo para as bordas dos rótulos do formulário */
+.form-group label {
+    font-weight: bold; /* Deixa o rótulo em negrito, opcional */
+}
+
+    /* CSS do Formulário de produtos */
+
+.borda-produto {
+    border: 3px solid #000; /* Altere a cor e sa espessura da borda conforme necessário */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+
+.conteudo-produto {
+    overflow: hidden;
+    /* Evita que o conteúdo ao lado se sobreponha à imagem */
+    margin-left: 130px;
+
+}
+/* Estilo para o select */
+.form-control#undMedida {
+    border: 3px solid #000; /* Altere a cor e a espessura da borda conforme necessário */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 3px; /* Espaçamento interno do select */
+}
+
+            /* CSS de Anexos */
+
+/* Estilo para o ícone de visualização */
+.fa-eye {
+  color: white; /* Altere a cor desejada */
+  
+}
+
+/* Estilo para o ícone de exclusão */
+.fa-trash {
+    color: white;
+    margin-left: 1px;
+    margin-right: 1px;
+  
+}
+
+
+/* Estilize o botão de exclusão */
+.btn-excluir-produto i {
+    cursor: pointer;
+    /* Altera o cursor para parecer um botão clicável */
+    margin-left: 10px;
+    display: block;
+    /* Define como bloco para que fique abaixo da imagem */
+    margin-top: 5px;
+    /* Adicione uma margem acima do botão para separá-lo do conteúdo */
+    font-size: 0.15px;
+    /* Tamanho de fonte menor para reduzir o tamanho do botão */
+    padding: px 8px;
+    /* Ajuste o preenchimento conforme necessário */
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    /* Espaçamento à direita do botão */
+    background-color: white;
+    /* Cor de fundo branca */
+    width: -100px;
+    /* Largura da imagem */
+    height: -100px;
+    /* Altura da imagem */
+    margin-bottom: 1px;
+    margin-top: 1px;
+    background-color: #FF0900;
+    color: white;
+    border-radius: 3px;
+}
+
+/*CSS personalizado*/ 
+.botao-excluir-produto .i.fas.fa-trash {
+    font-size: 1, 4%;
+    /* Tamanho de fonte menor para reduzir o tamanho do botão */
+    padding: 1%;
+    /* Ajuste o preenchimento conforme necessário */
+    width: -1000px;
+    /* Largura da imagem */
+    height: -1000px;
+    /* Altura da imagem */
+    margin-bottom: 500px;
+    background-color: red;
+}
+
+
+/* CSS personalizado para o botão de exclusão */
+.excluir-produto-btn {
+    width: 5%;
+    /* Largura da imagem do botão */
+    height: 5%;
+    /* Altura da imagem do botão */
+    margin-right: 10px;
+    /* Espaçamento à direita da imagem do botão */
+    background-color: red;
+}
+
+/* CSS personalizado para adicionar margem à esquerda do formulário de produtos*/
+.margem-esquerda {
+    margin-left: 20px;
+    /* Você pode ajustar o valor da margem conforme necessário */
+    margin-right: 20px;
+}
+
+.imagem-com-borda {
+    margin-bottom: 10px;
+    /* Margem na parte inferior */
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
